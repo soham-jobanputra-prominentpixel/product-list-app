@@ -1,8 +1,10 @@
 # Product List App
 ---
  
-**Task**: Product List with Filters
+**Task**: Product List with Filters.
+
 **Goal**: Display a list of products with the ability to filter them using a search input.
+
 **Description**:
 - You need to create a ProductList component that displays a list of products passed as props.
 - The products prop must always be an array of objects in this shape: { id: number; name: string; price: number }
