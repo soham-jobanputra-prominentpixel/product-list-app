@@ -5,7 +5,7 @@ const Product: React.FC<Pick<ProductType, "name" | "price">> = (
     { name, price },
 ) => {
     return (
-        <div className="min-w-auto p-4 rounded-xl bg-white max-w-50 text-wrap break-words capitalize">
+        <div className="min-w-auto p-4 rounded-xl bg-white max-w-50 text-wrap break-words capitalize border-2">
             <span className="font-semibold">{name}</span> <br />
             <span className="font-semibold">${price}</span>
         </div>
