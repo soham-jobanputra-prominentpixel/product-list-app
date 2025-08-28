@@ -5,21 +5,18 @@ import SearchInput from "./components/SearchInput.tsx";
 import ProductListClass from "./core/productList.ts";
 import { useState } from "react";
 
+const products = new ProductListClass(sampleProducts);
+
 const App: React.FC = () => {
-  const [productList, setProductList] = useState<ProductListClass>(
-    new ProductListClass(sampleProducts),
-  );
+  const [searchText, setSearchText] = useState("");
 
   return (
     <div className="mx-auto lg:w-2/3 p-4 w-full">
       <SearchInput
-        onSearch={(searchText) =>
-          setProductList(
-            new ProductListClass(productList.filterBySearchText(searchText)),
-          )}
+        onSearch={(inputSearchText) => setSearchText(inputSearchText)}
       />
       <div className="mt-6"></div>
-      <ProductList products={productList.products} />
+      <ProductList products={products.filterBySearchText(searchText)} />
     </div>
   );
 };
