@@ -1,3 +1,0 @@
-function filterBySearchText(searchText: string, ) {
-
-}
