@@ -75,5 +75,5 @@ export const sampleProducts: Product[] = [
   { id: 57, name: "Foundation", price: 35 },
   { id: 58, name: "Sunscreen", price: 22 },
   { id: 59, name: "Deodorant", price: 8 },
-  { id: 60, name: "Hair Dryer", price: 60 }
+  { id: 60, name: "Hair Dryer", price: 60 },
 ];
