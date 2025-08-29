@@ -10,7 +10,7 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
     return (
         <div className="flex flex-wrap gap-5">
             {products.length === 0
-                ? "No products match your search. Please try different keywords or filters."
+                ? "No products match your search. Please try different keywords."
                 : products.map(
                     (product) => (
                         <Product
