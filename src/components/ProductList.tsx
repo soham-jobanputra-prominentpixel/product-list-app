@@ -1,6 +1,6 @@
 import type React from "react";
 import Product from "./Product.tsx";
-import type ProductType from "../core/product.ts";
+import type ProductType from "../constants/product.ts";
 
 type ProductListProps = {
     products: ProductType[];
